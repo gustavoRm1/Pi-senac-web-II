@@ -1,0 +1,48 @@
+﻿@model List<Contatos>
+
+@{
+    ViewData["Title"] = "Minhas reclamações";
+}
+
+
+
+
+
+<div class="text-center">
+<h1 class="separacao">@ViewData["Title"]</h1>
+
+<br>
+<a class="btn btn-success container-fluid" asp-controller="Chamados" asp-action="RegistrarContatos">Registrar reclamação</a>
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Número</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mensagem</th>
+    </tr>
+  </thead>
+  @foreach (Contatos contatoAtual in Model)
+{
+  <tbody>
+    <tr>
+      <th >@contatoAtual.nome</th>
+      <td>@contatoAtual.numero</td>
+      <td>@contatoAtual.email</td>
+      <td>@contatoAtual.msg</td>
+    </tr>
+  </tbody>
+  }
+</table>
+</div>
+
+<style>      .separacao{
+        color: white;
+       background-color: black;
+       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        
+      }</style>

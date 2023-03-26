@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "R2MIpHnrTDDPOOJNGtGB8oZdLLtCQOy1Y3nm7iOPg1n3WiNIvJ8SF3x8ZpnTzFzDZrInYKloaABNtWB16GQSiA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gustavo\\Desktop\\mvc\\mvc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gustavo\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,70 @@
+@model Usuario;
+@using Microsoft.AspNetCore.Http;
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perfil do Usuário</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+
+	<!-- Profile Tab Content -->
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card">
+					<div class="card-body">
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a  class="nav-link" asp-controller="Usuario" asp-action="Perfil">Meu Perfil</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Meus Pedidos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" asp-controller="Chamados" asp-action="RegistrarContatos">Reclame aqui</a>
+							</li>
+														<li class="nav-item">
+								<a class="nav-link" asp-controller="Chamados" asp-action="Contato">Minhas reclamações</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" asp-controller="Usuario" asp-action="Logout">Sair</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">Meu Perfil</h4>
+						
+						<form method="POST">
+							<div class="form-group">
+							<label>Nome: <strong>@Context.Session.GetString("nomeUsuario")</strong></label>
+							</div>
+							<div class="form-group">	
+							<label>Número: <strong></strong></label>
+							</div>
+							<div class="form-group">
+							<label>Email: <strong>@Context.Session.GetString("Usuario")</strong></label>
+							</div>
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
